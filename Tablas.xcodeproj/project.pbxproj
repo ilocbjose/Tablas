@@ -14,6 +14,8 @@
 		337B2AB72530A46000BE9E5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 337B2AB62530A46000BE9E5C /* Assets.xcassets */; };
 		337B2ABA2530A46000BE9E5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337B2AB82530A46000BE9E5C /* LaunchScreen.storyboard */; };
 		337B2AC22530B9C800BE9E5C /* PutasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B2AC12530B9C800BE9E5C /* PutasTableViewCell.swift */; };
+		D8954D292539E8B8004114A1 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8954D282539E8B8004114A1 /* WebViewController.swift */; };
+		D8954D2C2539EDE2004114A1 /* Chica.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8954D2B2539EDE2004114A1 /* Chica.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		337B2AB92530A46000BE9E5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		337B2ABB2530A46000BE9E5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		337B2AC12530B9C800BE9E5C /* PutasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutasTableViewCell.swift; sourceTree = "<group>"; };
+		D8954D282539E8B8004114A1 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		D8954D2B2539EDE2004114A1 /* Chica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chica.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +65,13 @@
 				337B2AAD2530A45A00BE9E5C /* AppDelegate.swift */,
 				337B2AAF2530A45A00BE9E5C /* SceneDelegate.swift */,
 				337B2AB12530A45A00BE9E5C /* ViewController.swift */,
+				D8954D2B2539EDE2004114A1 /* Chica.swift */,
+				337B2AC12530B9C800BE9E5C /* PutasTableViewCell.swift */,
 				337B2AB32530A45B00BE9E5C /* Main.storyboard */,
 				337B2AB62530A46000BE9E5C /* Assets.xcassets */,
 				337B2AB82530A46000BE9E5C /* LaunchScreen.storyboard */,
 				337B2ABB2530A46000BE9E5C /* Info.plist */,
-				337B2AC12530B9C800BE9E5C /* PutasTableViewCell.swift */,
+				D8954D282539E8B8004114A1 /* WebViewController.swift */,
 			);
 			path = Tablas;
 			sourceTree = "<group>";
@@ -144,6 +150,8 @@
 				337B2AB22530A45A00BE9E5C /* ViewController.swift in Sources */,
 				337B2AAE2530A45A00BE9E5C /* AppDelegate.swift in Sources */,
 				337B2AB02530A45A00BE9E5C /* SceneDelegate.swift in Sources */,
+				D8954D292539E8B8004114A1 /* WebViewController.swift in Sources */,
+				D8954D2C2539EDE2004114A1 /* Chica.swift in Sources */,
 				337B2AC22530B9C800BE9E5C /* PutasTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

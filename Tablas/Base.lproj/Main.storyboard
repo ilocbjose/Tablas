@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,28 +19,32 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleAspectFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pT6-Il-pkJ">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="111" id="NQF-Dc-RvW" customClass="PutasTableViewCell" customModule="Tablas" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="111"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaID" rowHeight="150" id="NQF-Dc-RvW" customClass="PutasTableViewCell" customModule="Tablas" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NQF-Dc-RvW" id="C7P-30-TZe">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="111"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="miakalifa" translatesAutoresizingMaskIntoConstraints="NO" id="XzR-FB-wCN">
-                                                    <rect key="frame" x="20" y="-3" width="120" height="117"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miakalifa" translatesAutoresizingMaskIntoConstraints="NO" id="XzR-FB-wCN">
+                                                    <rect key="frame" x="2" y="2" width="120" height="146"/>
                                                 </imageView>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Hola soy Mia Kalifa" translatesAutoresizingMaskIntoConstraints="NO" id="OgN-Eb-Yfs">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Hola soy Mia Kalifa" translatesAutoresizingMaskIntoConstraints="NO" id="OgN-Eb-Yfs">
                                                     <rect key="frame" x="189" y="11" width="176" height="89"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <color key="textColor" systemColor="labelColor"/>
                                                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="OgN-Eb-Yfs" firstAttribute="leading" secondItem="XzR-FB-wCN" secondAttribute="trailing" constant="50" id="29h-dj-ZBq"/>
+                                                <constraint firstItem="XzR-FB-wCN" firstAttribute="top" secondItem="C7P-30-TZe" secondAttribute="top" constant="2" id="6WS-ff-lJi"/>
+                                                <constraint firstAttribute="bottom" secondItem="XzR-FB-wCN" secondAttribute="bottom" constant="2" id="JPH-wk-1gq"/>
+                                                <constraint firstItem="XzR-FB-wCN" firstAttribute="leading" secondItem="C7P-30-TZe" secondAttribute="leading" constant="2" id="iOV-P9-PEf"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="picture" destination="XzR-FB-wCN" id="sma-AY-qE9"/>
@@ -48,22 +54,67 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pT6-Il-pkJ" secondAttribute="trailing" id="BHk-Uj-HSX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pT6-Il-pkJ" secondAttribute="bottom" id="CKQ-1g-e13"/>
                             <constraint firstItem="pT6-Il-pkJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JMT-sD-B6k"/>
                             <constraint firstItem="pT6-Il-pkJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="O7o-OT-IeX"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="pT6-Il-pkJ" id="h6S-en-6vO"/>
+                        <segue destination="9x7-lw-mJe" kind="show" identifier="WebViewSegue" id="ryZ-CO-dcb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="121.73913043478262" y="138.61607142857142"/>
+            <point key="canvasLocation" x="-420" y="25"/>
+        </scene>
+        <!--WebViewController-->
+        <scene sceneID="og3-6P-Vho">
+            <objects>
+                <viewController title="WebViewController" id="9x7-lw-mJe" customClass="WebViewController" customModule="Tablas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4XC-OA-cGf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0GF-2q-1x5">
+                                <rect key="frame" x="10" y="10" width="394" height="788"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mE1-4i-Bb4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mE1-4i-Bb4" firstAttribute="bottom" secondItem="0GF-2q-1x5" secondAttribute="bottom" constant="10" id="D06-W7-sJg"/>
+                            <constraint firstItem="0GF-2q-1x5" firstAttribute="leading" secondItem="mE1-4i-Bb4" secondAttribute="leading" constant="10" id="LHQ-Ms-WEO"/>
+                            <constraint firstItem="0GF-2q-1x5" firstAttribute="top" secondItem="mE1-4i-Bb4" secondAttribute="top" constant="10" id="NKv-c5-QTT"/>
+                            <constraint firstItem="mE1-4i-Bb4" firstAttribute="trailing" secondItem="0GF-2q-1x5" secondAttribute="trailing" constant="10" id="djY-Br-zdX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fpn-tn-GzX"/>
+                    <connections>
+                        <outlet property="webView" destination="0GF-2q-1x5" id="OMA-mN-zoZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V7O-qz-Yei" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="397" y="25"/>
         </scene>
     </scenes>
     <resources>
         <image name="miakalifa" width="120" height="105"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

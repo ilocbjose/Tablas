@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var datos: [String] = []
+    var datos: [Chica] = [,"miaKalifa"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return datos.count
@@ -19,12 +19,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celda = tableView.dequeueReusableCell(withIdentifier: "celdaID", for: indexPath)
         celda.textLabel?.text = datos [indexPath.row] //Array de String
+        celda.imageView?.image = UIImage(named: "miaKalifa")
         return celda
     } //como pintar cada fila
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        self.performSegue(withIdentifier: "WebViewSegue", sender: nil)
+        
     } //seleccion de una fila
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return 200.0
+    }
     
     
     @IBOutlet weak var tableView: UITableView!
